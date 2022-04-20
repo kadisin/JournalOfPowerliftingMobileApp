@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Fragments.TrainerTrainingFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_header_black_bottom_radious"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Journal of"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:flow_horizontalBias="0.498"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Powerlifting"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:flow_horizontalBias="0.498"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+
+        <TextView
+            android:id="@+id/ChooseCompetitorText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Wybierz zawodnika:"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+        <Spinner
+            android:id="@+id/ChooseCompetitor"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseCompetitorText"/>
+
+        <TextView
+            android:id="@+id/ChooseAmountOfDaysText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="Podaj ilość dni:"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseCompetitor"/>
+        <Spinner
+            android:id="@+id/ChooseAmountOfDays"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseAmountOfDaysText"/>
+
+        <Button
+            android:id="@+id/StartTrainerTrainingButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:text="Rozpocznij"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChooseAmountOfDays" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

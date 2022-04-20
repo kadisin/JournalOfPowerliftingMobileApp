@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_header_black_bottom_radious"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:text="Journal of"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:flow_horizontalBias="0.498"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Powerlifting"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            app:flow_horizontalBias="0.498"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+
+
+        <EditText
+            android:id="@+id/LoginInput"
+            android:hint="Podaj login"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_login_icon"
+            android:drawableLeft="@drawable/ic_login_icon"
+            android:inputType="text"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/view"/>
+        <EditText
+            android:id="@+id/PasswordInput"
+            android:hint="Podaj hasło"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_login_icon"
+            android:drawableLeft="@drawable/ic_login_icon"
+            android:inputType="text"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LoginInput" />
+
+        <EditText
+            android:id="@+id/EmailInput"
+            android:hint="Podaj e-mail"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_login_icon"
+            android:drawableLeft="@drawable/ic_login_icon"
+            android:inputType="text"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordInput" />
+
+        <EditText
+            android:id="@+id/NameInput"
+            android:hint="Podaj imię"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_login_icon"
+            android:drawableLeft="@drawable/ic_login_icon"
+            android:inputType="text"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EmailInput" />
+
+        <EditText
+            android:id="@+id/SurnameInput"
+            android:hint="Podaj nazwisko"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/ic_login_icon"
+            android:drawableLeft="@drawable/ic_login_icon"
+            android:inputType="text"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameInput" />
+
+        <TextView
+            android:id="@+id/StatusTextView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Status konta:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SurnameInput"
+            />
+
+        <RadioButton
+            android:id="@+id/FirstStatusRadiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Zawodnik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTextView"
+            />
+
+
+        <RadioButton
+            android:id="@+id/SecondStatusRadiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:text="Trener"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstStatusRadiobutton"
+            />
+
+        <Button
+            android:id="@+id/RegisterNewAccountButton"
+            android:text="Zarejestruj się!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SecondStatusRadiobutton"
+
+            />
+        <Button
+            android:id="@+id/BackToLoginButton"
+            android:text="Powrót do okna logowania"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RegisterNewAccountButton"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
